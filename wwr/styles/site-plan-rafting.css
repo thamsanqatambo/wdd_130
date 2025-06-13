@@ -1,29 +1,31 @@
+
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette other */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: #FFE6A7;
+  /* change the values below to your colors from your palette */
+  --primary-color: #1B4965;
+--secondary-color: #CAE9FF;
+--accent1-color: #5FA8D3;
+--accent2-color: #FF6700;
+  /* these colors below should be chosen from among your palette colors above */
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Rock Salt", cursive;
-  --paragraph-font: "Roboto", Helvetica, Arial, sans-serif;
+  --heading-font: 'Playfair Display', serif;
+--paragraph-font: 'Open Sans', sans-serif;
+
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+ --headline-color-on-color: white;
+--paragraph-color-on-color: white;
+--paragraph-background-color: #1B4965;
+--nav-link-color: #1B4965;
+--nav-background-color: #CAE9FF;
+--nav-hover-link-color: white;
+--nav-hover-background-color: #FF6700;
+
 }
 
 
@@ -74,14 +76,11 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: var(--primary-color);
-  color: var(--headline-color-on-color);
-  padding: 0.5em;
+  background-color: #999;
 }
-.colors td {
+.colors td{
   width: 25%;
   height: 3em;
-  border: 1px solid #ccc;
 }
 .primary {
   background-color: var(--primary-color);
@@ -92,7 +91,7 @@ p {
 .accent1 {
   background-color: var(--accent1-color);
 }
-.accent2 {
+.accent2{
   background-color: var(--accent2-color);
 }
 p.colored {
@@ -104,14 +103,16 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+}
+nav  {
   list-style-type: none;
   display: flex;
-  justify-content: center; /* Center-align navigation links */
 }
 nav a {
-  padding: 10px 1em;
+  padding:1em;
   min-width: 120px;
   text-decoration: none;
+  padding: 10px;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -123,7 +124,7 @@ nav a:hover {
 .sitemap {
   display: grid;
   justify-content: center;
-  gap: 10px;
+
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
@@ -133,9 +134,6 @@ nav a:hover {
 }
 .sitemap > div {
   text-align: center;
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  background-color: var(--secondary-color);
 }
 .sm-home {
   grid-area: home;

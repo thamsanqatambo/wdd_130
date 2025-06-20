@@ -1,36 +1,51 @@
-/* Responsive Images */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rock+Salt&display=swap');
+
+/* Layout container */
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-/* Specific image tweaks */
-.card-img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
+/* Reset and base font */
+body {
+  background-color: #fcfbfb;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
-.icon {
-  width: 60px;
-  height: auto;
+/* Reset h2 margin */
+h2 {
+  margin: 0;
 }
 
-.logo {
-  width: 100px;
+/* Header styling */
+header {
+  background-color: rgba(20, 30, 13, 0.7);
 }
 
+/* Logo spacing */
+#logo_link {
+  padding-top: 5px;
+}
+
+/* Navigation links */
+nav a {
+  text-align: center;
+  color: #fcfbfb;
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover {
+  background-color: black;
+  color: #d9c2a3;
+}
+
+/* Hero image */
 #hero-img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-}
-
-.mountains {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  margin-top: 20px;
-}
+  border-radius: 10p

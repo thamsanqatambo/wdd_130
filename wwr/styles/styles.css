@@ -1,98 +1,36 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-/* General page layout */
-#content {
-  max-width: 1600px;
-  margin: 0 auto;
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-body {
-  background-color: #fcfbfb;
-  font-family: 'Raleway', Arial, sans-serif;
-  font-size: 22px;
-  margin: 0;
-  padding: 0;
+/* Specific image tweaks */
+.card-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-h2 {
-  margin: 0;
+.icon {
+  width: 60px;
+  height: auto;
 }
 
-header {
-  background-color: rgba(20, 30, 13, 0.7);
-}
-
-#logo_link {
-  padding-top: 5px;
-}
-
-nav a {
-  text-align: center;
-  color: #fcfbfb;
-  text-decoration: none;
-  padding: 35px;
-}
-
-nav a:hover {
-  background-color: black;
-  color: #d9c2a3;
+.logo {
+  width: 100px;
 }
 
 #hero-img {
   width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.logo {
-  width: 80px;
+.mountains {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
 }
-
-.icon {
-  width: 80px;
-  padding-top: 10px;
-}
-
-.button-box,
-main section,
-#hero-msg h1,
-#hero-msg h4 {
-  text-align: center;
-}
-
-.home-title {
-  font-family: 'Raleway', Arial, sans-serif;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-.book,
-.join {
-  background-color: #3e8e41;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
-}
-
-.book:hover,
-.join:hover {
-  background-color: #2e7031;
-  color: #ffffff;
-}
-
-#background {
-  height: 725px;
-  background-color: #f4f4f4;
-}
-
-.rivers-card,
-.camping-card,
-.rapids-card {
-  margin: 200px 0;
-}
-
-.msg {
-  background-color: #e0e0e0;
-  line-height: 1.5em;

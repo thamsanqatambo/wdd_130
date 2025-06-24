@@ -4,21 +4,20 @@
 <head>
   <meta charset="utf-8" />
   <title>DRY OAR Site Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles/site-plan-rafting.css" />
+  <!-- Google Fonts for improved typography -->
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,700|Lato:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>DRY OAR Site Plan</h1>
-    <h2>Thamsanqa Tambowoneyi</h2>
-    <h2>WDD 130-A2</h2>
+    <p class="author">Thamsanqa Tambowoneyi &mdash; WDD 130-A2</p>
   </header>
-
   <main>
-    <section>
-      <hr />
-      <h2>Overview</h2>
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
       <h3>Purpose</h3>
       <p>
         Our website promotes thrilling white water rafting adventures, allows easy trip booking, and showcases the excitement of river rafting in Colorado.
@@ -29,19 +28,18 @@
       </p>
     </section>
 
-    <section>
-      <hr />
-      <h2>Branding</h2>
+    <section aria-labelledby="branding">
+      <h2 id="branding">Branding</h2>
       <h3>Website Logo</h3>
-      <img src="images/Rapids_logo.jpg" alt="Dry Oar Logo" class="logo" />
+      <img src="images/Rapids_logo.jpg" alt="Dry Oar company logo with stylized rapids" class="logo" />
     </section>
 
-    <section>
-      <hr />
-      <h2>Style Guide</h2>
+    <section aria-labelledby="style-guide">
+      <h2 id="style-guide">Style Guide</h2>
       <h3>Color Palette</h3>
-      <p>Palette URL:
-        <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank">
+      <p>
+        Palette URL:
+        <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank" rel="noopener">
           https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c
         </a>
       </p>
@@ -54,5 +52,58 @@
         </tr>
       </table>
       <h3>Typography</h3>
-      <h4>Heading Font: <span class="heading-font">IM Fell French Canon, serif</span></h4>
-      <h4>Paragraph Font: <span cla
+      <ul>
+        <li>Heading Font: <span style="font-family:'IM Fell French Canon', serif;">IM Fell French Canon, serif</span>
+        </li>
+        <li>Paragraph Font: <span style="font-family:'Lato', sans-serif;">Lato, sans-serif</span></li>
+      </ul>
+      <h3>Normal paragraph example</h3>
+      <p>
+        The best Whitewater Rafting in Colorado, White Water Rafting Company offers rafting on the Colorado and Roaring Fork Rivers in Glenwood Springs. Since 1974, we have been family owned and operated, rafting the Shoshone section of Glenwood Canyon and beyond.
+      </p>
+      <h3>Colored paragraph example</h3>
+      <p class="colored">
+        Trips vary from mild and great for families, to trips exclusively for physically fit and experienced rafters. No matter what type of river adventures you are seeking, White Water Rafting Company can make it happen for you.
+      </p>
+    </section>
+
+    <section aria-labelledby="navigation">
+      <h2 id="navigation">Navigation</h2>
+      <nav aria-label="Main site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Trips</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="site-map">
+      <h2 id="site-map">Site Map</h2>
+      <div class="sitemap">
+        <div class="sm-home">Home</div>
+        <div class="sm-page2">Trips</div>
+        <div class="sm-page3">Contact Us</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="wireframes">
+      <h2 id="wireframes">Wireframes</h2>
+      <div class="wireframes">
+        <div>
+          <h3>Home</h3>
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="Wireframe of the Home page layout" class="wireframe" />
+        </div>
+        <div>
+          <h3>Trips Page</h3>
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_trips.png" alt="Wireframe of the Trips page layout" class="wireframe" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 DRY OAR. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

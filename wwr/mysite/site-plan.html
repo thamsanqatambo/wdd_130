@@ -1,201 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
- <head>
+<head>
   <meta charset="utf-8"/>
-  <title>
-   Music Vibes Site Plan
-  </title>
+  <title>Music Vibes Site Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="styles/site-plan.css" rel="stylesheet" type="text/css"/>
- </head>
- <body>
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
   <header>
-   <h1>
-    Music Vibes Site Plan
-   </h1>
-   <h2>
-    Thamsanqa Tambowoneyi
-   </h2>
-   <h2>
-    WDD 130
-   </h2>
+    <h1>Music Vibes Site Plan</h1>
+    <p class="author">Thamsanqa Tambowoneyi &mdash; WDD 130</p>
   </header>
   <main>
-   <hr/>
-   <h2>
-    Overview
-   </h2>
-   <h3>
-    Purpose
-   </h3>
-   <p>
-    This website showcases my personal taste in music, featuring curated playlists, favorite genres, and artist spotlights. It's a place to share recommendations and inspire others to explore new sounds.
-   </p>
-   <h3>
-    Audience
-   </h3>
-   <p>
-    This site is intended for music lovers, students looking for study or workout playlists, and anyone wanting to discover new music in a clean and curated way.
-   </p>
-   <hr/>
-   <h2>
-    Branding
-   </h2>
-   <h3>
-    Website Logo
-   </h3>
-   <img alt="Music Vibes Logo" src="images/75fe9f7c15bd4133aff94d66bab55986-free.png"/>
-   <hr/>
-   <h2>
-    Style Guide
-   </h2>
-   <h3>
-    Color Palette
-   </h3>
-   <table class="colors">
-    <tr>
-     <th>
-      Primary
-     </th>
-     <th>
-      Secondary
-     </th>
-     <th>
-      Accent 1
-     </th>
-     <th>
-      Accent 2
-     </th>
-    </tr>
-    <tr>
-     <td class="primary">
-     </td>
-     <td class="secondary">
-     </td>
-     <td class="accent1">
-     </td>
-     <td class="accent2">
-     </td>
-    </tr>
-   </table>
-   <h3>
-    Typography
-   </h3>
-   <h4>
-    Heading Font: IM Fell French Canon SC
-   </h4>
-   <h4>
-    Paragraph Font: Lato
-   </h4>
-   <h3>
-    Normal paragraph example
-   </h3>
-   <p>
-    Welcome to Music Vibes, your source for genre guides, playlists, and recommendations to keep your ears happy and your day moving.
-   </p>
-   <h3>
-    Colored paragraph example
-   </h3>
-   <p class="colored">
-    Discover something new today—whether it's lo-fi beats for studying or energetic tracks for working out!
-   </p>
-   <h3>
-    Navigation
-   </h3>
-   <nav>
-    <a href="index.html">
-     Home
-    </a>
-    <a href="genre.html">
-     Genres
-    </a>
-    <a href="playlists.html">
-     Playlists
-    </a>
-   </nav>
-   <hr/>
-   <h2>
-    Site Map
-   </h2>
-   <div class="sitemap">
-    <div class="sm-home">
-     Home
-    </div>
-    <div class="sm-page2">
-     Genres
-    </div>
-    <div class="sm-page3">
-     Playlists
-    </div>
-    <div class="top">
-    </div>
-    <div class="left">
-    </div>
-    <div class="right">
-    </div>
-   </div>
-   <hr/>
-   <h2>
-    Content
-   </h2>
-   <h3>
-    Home Page
-   </h3>
-   <p>
-    Welcome to my music site! Here you’ll find curated content that reflects my love for music across different moods and settings—from relaxing at home to training hard in the gym.
-   </p>
-   <p>
-    Images for the Home page
-   </p>
-   <img alt="music homepage image" src="images/75fe9f7c15bd4133aff94d66bab55986-free.png"/>
-   <img alt="music atmosphere image" src="images/home2.png"/>
-   <h3>
-    Genres
-   </h3>
-   <p>
-    In this section, explore my favorite genres like Hip-Hop, Jazz, Classical, and Electronic. Each genre will be explained in detail with historical context, notable subgenres, and artist recommendations. From smooth saxophones to glitchy beats, there's something for every mood and moment.
-   </p>
-   <p>
-    Images for the Genres page
-   </p>
-   <img alt="genre sample image" src="images/genres.jfif"/>
-   <img alt="artist image" src="images/genres2.jfif"/>
-   <h3>
-    Playlists
-   </h3>
-   <p>
-    This page will feature playlists I personally curated for different activities and moods like “Study Flow,” “Jiu-Jitsu Drive,” and “Chill Sunday.” Each playlist will include track lists, a short description, and embedded Spotify or YouTube links for direct listening.
-   </p>
-   <p>
-    Images for the Playlists page
-   </p>
-   <img alt="playlist example" src="images/playlist.png"/>
-   <img alt="mood board music" src="images/playlist2.png"/>
-   <hr/>
-   <h2>
-    Wireframes
-   </h2>
-   <h3>
-    Home
-   </h3>
-   <p>
-    Navigation bar, hero image, short intro paragraph, and links to Genres and Playlists sections.
-   </p>
-   <img alt="home page wireframe" src="images/main_wireframe.png"/>
-   <h3>
-    Genres
-   </h3>
-   <p>
-    List of genres in grid or cards, each with a description and image.
-   </p>
-   <img alt="genres page wireframe" src="images/genre_wireframe.png"/>
-   <h3>
-    Playlists
-   </h3>
-   <p>
-    Playlist cards with images, short descriptions, and embedded Spotify or YouTube links.
-   </p>
-   <img alt="playlists page wireframe" src="images/playlist_wireframe.png"/>
+    <section aria-labelledby="overview">
+      <hr/>
+      <h2 id="overview">Overview</h2>
+      <h3>Purpose</h3>
+      <p>
+        This website showcases my personal taste in music, featuring curated playlists, favorite genres, and artist spotlights. It's a place to share recommendations and inspire others to explore new sounds.
+      </p>
+      <h3>Audience</h3>
+      <p>
+        This site is intended for music lovers, students looking for study or workout playlists, and anyone wanting to discover new music in a clean and curated way.
+      </p>
+    </section>
+
+    <section aria-labelledby="branding">
+      <hr/>
+      <h2 id="branding">Branding</h2>
+      <h3>Website Logo</h3>
+      <img alt="Music Vibes Logo" src="images/75fe9f7c15bd4133aff94d66bab55986-free.png" class="logo"/>
+    </section>
+
+    <section aria-labelledby="style-guide">
+      <hr/>
+      <h2 id="style-guide">Style Guide</h2>
+      <h3>Color Palette</h3>
+      <table class="colors">
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent 1</th>
+          <th>Accent 2</th>
+        </tr>
+        <tr>
+          <td style="background-color: #396E94; color: white;">#396E94<br>Primary</td>
+          <td style="background-color: #E7C24F; color: #222;">#E7C24F<br>Secondary</td>
+          <td style="background-color: #A43312; color: white;">#A43312<br>Accent 1</td>
+          <td style="background-color: #AABD8C; color: #222;">#AABD8C<br>Accent 2</td>
+        </tr>
+      </table>
+      <p>
+        Palette URL:
+        <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank" rel="noopener">
+          https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c
+        </a>
+      </p>
+      <h3>Typography</h3>
+      <ul>
+        <li>Heading Font: <span style="font-family:'IM Fell French Canon SC', serif;">IM Fell French Canon SC</span></li>
+        <li>Paragraph Font: <span style="font-family:'Lato', sans-serif;">Lato</span></li>
+      </ul>
+      <h3>Normal paragraph example</h3>
+      <p>
+        Welcome to Music Vibes, your source for genre guides, playlists, and recommendations to keep your ears happy and your day moving.
+      </p>
+      <h3>Colored paragraph example</h3>
+      <p class="colored">
+        Discover something new today—whether it's lo-fi beats for studying or energetic tracks for working out!
+      </p>
+    </section>
+
+    <section aria-labelledby="navigation">
+      <h3 id="navigation">Navigation</h3>
+      <nav aria-label="Main site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="genre.html">Genres</a></li>
+          <li><a href="playlists.html">Playlists</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="site-map">
+      <hr/>
+      <h2 id="site-map">Site Map</h2>
+      <div class="sitemap">
+        <div class="sm-home">Home</div>
+        <div class="sm-page2">Genres</div>
+        <div class="sm-page3">Playlists</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="content">
+      <hr/>
+      <h2 id="content">Content</h2>
+      <article>
+        <h3>Home Page</h3>
+        <p>
+          Welcome to my music site! Here you’ll find curated content that reflects my love for music across different moods and settings—from relaxing at home to training hard in the gym.
+        </p>
+        <p>Images for the Home page:</p>
+        <div class="image-row">
+          <img alt="music homepage image" src="images/75fe9f7c15bd4133aff94d66bab55986-free.png"/>
+          <img alt="music atmosphere image" src="images/home2.png"/>
+        </div>
+      </article>
+      <article>
+        <h3>Genres</h3>
+        <p>
+          In this section, explore my favorite genres like Hip-Hop, Jazz, Classical, and Electronic. Each genre will be explained in detail with historical context, notable subgenres, and artist recommendations. From smooth saxophones to glitchy beats, there's something for every mood and moment.
+        </p>
+        <p>Images for the Genres page:</p>
+        <div class="image-row">
+          <img alt="genre sample image" src="images/genres.jfif"/>
+          <img alt="artist image" src="images/genres2.jfif"/>
+        </div>
+      </article>
+      <article>
+        <h3>Playlists</h3>
+        <p>
+          This page will feature playlists I personally curated for different activities and moods like “Study Flow,” “Jiu-Jitsu Drive,” and “Chill Sunday.” Each playlist will include track lists, a short description, and embedded Spotify or YouTube links for direct listening.
+        </p>
+        <p>Images for the Playlists page:</p>
+        <div class="image-row">
+          <img alt="playlist example" src="images/playlist.png"/>
+          <img alt="mood board music" src="images/playlist2.png"/>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="wireframes">
+      <hr/>
+      <h2 id="wireframes">Wireframes</h2>
+      <article>
+        <h3>Home</h3>
+        <p>Navigation bar, hero image, short intro paragraph, and links to Genres and Playlists sections.</p>
+        <img alt="home page wireframe" src="images/main_wireframe.png"/>
+      </article>
+      <article>
+        <h3>Genres</h3>
+        <p>List of genres in grid or cards, each with a description and image.</p>
+        <img alt="genres page wireframe" src="images/genre_wireframe.png"/>
+      </article>
+      <article>
+        <h3>Playlists</h3>
+        <p>Playlist cards with images, short descriptions, and embedded Spotify or YouTube links.</p>
+        <img alt="playlists page wireframe" src="images/playlist_wireframe.png"/>
+      </article>
+    </section>
   </main>
- </body>
+</body>
 </html>

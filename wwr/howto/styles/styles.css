@@ -1,0 +1,193 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+/* Modal Trigger Button */
+.openbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 40px;
+  border-radius: 4px;
+}
+
+.openbtn:hover {
+  opacity: 0.9;
+}
+
+/* Modal Background */
+.modal {
+  display: block; /* Always visible for this use case */
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+/* Modal Box */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  animation: animatezoom 0.5s;
+  box-shadow: 0 8px 32px rgba(57,110,148,0.15);
+}
+
+@keyframes animatezoom {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Avatar Image */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(57,110,148,0.10);
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: #A43312;
+}
+
+/* Form Container */
+.container {
+  padding: 18px 20px;
+}
+
+.container label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #f9f9f9;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1.5px solid #396E94;
+  outline: none;
+}
+
+/* Buttons */
+button[type="submit"] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 1.08em;
+  font-weight: bold;
+  transition: background 0.2s, opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(57,110,148,0.08);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #03995c;
+  opacity: 0.95;
+}
+
+/* Checkbox and label */
+.container label input[type="checkbox"] {
+  margin-right: 6px;
+  accent-color: #04AA6D;
+}
+
+/* Light background footer */
+.light-bg {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+}
+
+/* Forgot Password Link */
+span.psw {
+  font-size: 14px;
+  padding-top: 0;
+}
+
+span.psw a {
+  color: #396E94;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+span.psw a:hover,
+span.psw a:focus {
+  color: #A43312;
+}
+
+/* Remove unused/cancel styles */
+.cancelbtn, .openbtn {
+  display: none !important;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 500px) {
+  .modal-content {
+    width: 98%;
+    margin: 10% auto;
+    padding: 0;
+  }
+  .container {
+    padding: 14px 8px;
+  }
+  .imgcontainer {
+    margin: 18px 0 8px;
+  }
+  .light-bg {
+    padding: 8px 10px;
+  }
+}

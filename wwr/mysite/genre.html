@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Genres - Music Vibes</title>
@@ -9,30 +9,39 @@
 <body>
   <header>
     <h1>Music Vibes</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="genres.html">Genres</a></li>
+        <li><a href="genres.html" class="active" aria-current="page">Genres</a></li>
         <li><a href="playlists.html">Playlists</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Genres</h2>
+    <section aria-labelledby="genres-heading">
+      <h2 id="genres-heading">Genres</h2>
       <p>
-        Explore a variety of music genres such as lo-fi hip-hop, jazz, classical, electronic, and more. Each section will highlight the genre’s unique characteristics, historical background, and must-listen artists or albums. Whether you're into mellow instrumentals or high-energy beats, there’s something for everyone to discover. This page is perfect for both curious newcomers and seasoned music lovers looking to expand their tastes.
+        Explore a variety of music genres such as lo-fi hip-hop, jazz, classical, electronic, and more. Each section highlights the genre’s unique characteristics, historical background, and must-listen artists or albums. Whether you're into mellow instrumentals or high-energy beats, there’s something for everyone to discover. This page is perfect for both curious newcomers and seasoned music lovers looking to expand their tastes.
       </p>
       <div class="genre-images">
-        <img src="images/genres.jfif" alt="Genre example" />
-        <img src="images/genres2.jfif" alt="Genre related artwork" />
+        <figure>
+          <img src="images/genres.jfif" alt="Abstract artwork representing lo-fi hip-hop genre" />
+          <figcaption>Lo-fi Hip-Hop</figcaption>
+        </figure>
+        <figure>
+          <img src="images/genres2.jfif" alt="Colorful jazz genre illustration" />
+          <figcaption>Jazz</figcaption>
+        </figure>
       </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Music Vibes. All rights reserved.</p>
-  </footer>
+
+
+
+</html></body>  </footer>  </footer>
 </body>
 </html>
